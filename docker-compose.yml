@@ -19,4 +19,6 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wp
+      WORDPRESS_DB_USER: wp
       WORDPRESS_DB_PASSWORD: wp
