@@ -3,14 +3,14 @@ services:
   frontend:
     image: subicura/guestbook-frontend:latest
     environment:
-      PORT: 8000
+      PORT: 8000 #리스닝 포트로 설정
       GUESTBOOK_API_ADDR: backend:8000
     ports:
       - "62000:8000"
   backend:
     image: subicura/guestbook-backend:latest
     environment:
-      PORT: 8000
+      PORT: 8000 #리스닝 포트로 설정
       GUESTBOOK_DB_ADDR: mongodb:27017
     restart: always
   mongodb:
